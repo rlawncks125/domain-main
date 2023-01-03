@@ -11,6 +11,7 @@
     "nuxt": "3.0.0"
   },
   "dependencies": {
-    "sass": "^1.57.1"
+    "sass": "^1.57.1",
+    "simple-code-editor": "^1.2.2"
   }
 }
