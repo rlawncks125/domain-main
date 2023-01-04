@@ -2,6 +2,13 @@ import { defineNuxtConfig } from "nuxt/config";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  css: ["~/assets/scss/header.scss", "~/assets/tailwind.css"],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
   app: {
     head: {
       meta: [
@@ -26,6 +33,8 @@ export default defineNuxtConfig({
       ],
     },
   },
+
+  // nitro Storage
   nitro: {
     // https://nuxt.com/docs/guide/directory-structure/server#server-storage
     storage: {

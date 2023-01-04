@@ -10,11 +10,11 @@
 </template>
 
 <script setup lang="ts">
-const { data: resDataSuccess } = await useFetch("/api/test", {
+const { data: resDataSuccess } = await useFetch("/api/nitroStorage", {
   method: "post",
   body: { text: "Nuxt is Awesome! 아아ㅏ" },
 });
-const { data: resData } = await useFetch("/api/test");
+const { data: resData } = await useFetch("/api/nitroStorage");
 </script>
 
 <style scoped></style>
