@@ -26,6 +26,16 @@ export default defineNuxtConfig({
       ],
     },
   },
+  nitro: {
+    // https://nuxt.com/docs/guide/directory-structure/server#server-storage
+    storage: {
+      db: {
+        driver: "fs",
+        base: "./dbData",
+      },
+    },
+  },
+
   runtimeConfig: {
     // public
     public: {
