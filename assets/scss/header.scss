@@ -190,6 +190,11 @@ blockquote {
   // 줄바꿈
   word-break: break-all;
   white-space: pre-line;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
 }
 .view-warp {
   & p {

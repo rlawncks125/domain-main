@@ -2,7 +2,7 @@ import { defineNuxtConfig } from "nuxt/config";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  css: ["~/assets/scss/header.scss", "~/assets/tailwind.css"],
+  css: ["~/assets/scss/header.scss", "~/assets/tailwind.scss"],
   postcss: {
     plugins: {
       tailwindcss: {},

@@ -5,7 +5,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component("CodeConvert", CodeEditor);
 });
 
-export interface codeReutrnType {
+export interface CodeReutrnType {
   title?: string;
   html?: string;
   code?: { code: string; lang: CodeLanguages }[];

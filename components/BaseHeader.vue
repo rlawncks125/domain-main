@@ -16,15 +16,14 @@
         <input type="checkbox" id="check3" />
         <label for="check3">HTML</label>
         <div class="menu-warp">
-          <NuxtLink to="/">HTML</NuxtLink>
-          <NuxtLink to="/">기본구조</NuxtLink>
-          <NuxtLink to="/">시멘틱태그</NuxtLink>
-          <NuxtLink to="/">텍스트관련</NuxtLink>
-          <NuxtLink to="/">목록관련</NuxtLink>
-          <NuxtLink to="/">링크_이미지</NuxtLink>
-          <NuxtLink to="/">테이블관련</NuxtLink>
-          <NuxtLink to="/">폼관련</NuxtLink>
-          <NuxtLink to="/">멀티미디어</NuxtLink>
+          <NuxtLink to="/HTML/Base">기본구조</NuxtLink>
+          <NuxtLink to="/HTML/Semantic">시멘틱태그</NuxtLink>
+          <NuxtLink to="/HTML/Text">텍스트관련</NuxtLink>
+          <NuxtLink to="/HTML/List">목록관련</NuxtLink>
+          <NuxtLink to="/HTML/Link_Image">링크_이미지</NuxtLink>
+          <NuxtLink to="/HTML/Table">테이블관련</NuxtLink>
+          <NuxtLink to="/HTMl/Form">폼관련</NuxtLink>
+          <NuxtLink to="/HTML/Multimedia">멀티미디어</NuxtLink>
         </div>
       </div>
       <div class="title-warp">
