@@ -2,7 +2,7 @@
   <CodeConvert
     width="100%"
     height="auto"
-    :read_only="false"
+    :read_only="true"
     :wrap_code="true"
     :language_selector="true"
     :languages="editorLanges($props.lang)"

@@ -86,16 +86,12 @@
           <NuxtLink to="/">DOM접근</NuxtLink>
         </div>
       </div>
-      <div class="title-warp">
-        <input type="checkbox" id="check8" />
-        <label for="check8">Vue-Router</label>
-        <div class="menu-warp"></div>
-      </div>
+
       <div class="title-warp">
         <input type="checkbox" id="check9" />
         <label for="check9">기타</label>
         <div class="menu-warp">
-          <NuxtLink to="/">opener</NuxtLink>
+          <NuxtLink to="/other/opener">opener</NuxtLink>
           <!-- <NuxtLink to="/함수_Promise_리턴값"
               >함수_Promise_리턴값</NuxtLink
             > -->
@@ -116,13 +112,13 @@
         <input type="checkbox" id="check11" />
         <label for="check11">Markdown</label>
         <div class="menu-warp">
-          <NuxtLink to="/">README</NuxtLink>
-          <NuxtLink to="/">글자</NuxtLink>
-          <NuxtLink to="/">링크_줄바꿈</NuxtLink>
-          <NuxtLink to="/">선_강조</NuxtLink>
-          <NuxtLink to="/">이미지</NuxtLink>
-          <NuxtLink to="/">인용글_목록</NuxtLink>
-          <NuxtLink to="/">코드</NuxtLink>
+          <NuxtLink to="/Markdown/README">README</NuxtLink>
+          <NuxtLink to="/Markdown/글자">글자</NuxtLink>
+          <NuxtLink to="/Markdown/링크_줄바꿈">링크_줄바꿈</NuxtLink>
+          <NuxtLink to="/Markdown/선_강조">선_강조</NuxtLink>
+          <NuxtLink to="/Markdown/이미지">이미지</NuxtLink>
+          <NuxtLink to="/Markdown/인용글_목록">인용글_목록</NuxtLink>
+          <NuxtLink to="/Markdown/코드">코드</NuxtLink>
         </div>
       </div>
     </ul>

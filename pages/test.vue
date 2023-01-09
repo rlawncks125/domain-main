@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import { CodeLanguages, codeReutrnType } from "@/plugins/simple-code-editor";
+import { CodeLanguages, CodeReutrnType } from "@/plugins/simple-code-editor";
 
 const text그라데이션 = () => {
   return {
