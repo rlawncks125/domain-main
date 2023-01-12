@@ -39,16 +39,16 @@
         <input type="checkbox" id="check5" />
         <label for="check5">SCSS</label>
         <div class="menu-warp">
-          <NuxtLink to="/">Media쿼리</NuxtLink>
-          <NuxtLink to="/">@Container</NuxtLink>
-          <NuxtLink to="/">데이터</NuxtLink>
-          <NuxtLink to="/">중첩</NuxtLink>
-          <NuxtLink to="/">라이브러리 가져오기</NuxtLink>
-          <NuxtLink to="/">Mixins</NuxtLink>
-          <NuxtLink to="/">Extend</NuxtLink>
-          <NuxtLink to="/">Function</NuxtLink>
-          <NuxtLink to="/">조건문_반복문</NuxtLink>
-          <NuxtLink to="/">내장함수</NuxtLink>
+          <NuxtLink to="/scss/media_query">Media쿼리</NuxtLink>
+          <NuxtLink to="/scss/container">@Container</NuxtLink>
+          <NuxtLink to="/scss/data">데이터</NuxtLink>
+          <NuxtLink to="/scss/overlapping">중첩</NuxtLink>
+          <NuxtLink to="/scss/library">라이브러리 가져오기</NuxtLink>
+          <NuxtLink to="/scss/Mixins">Mixins</NuxtLink>
+          <NuxtLink to="/scss/Extend">Extend</NuxtLink>
+          <NuxtLink to="/scss/function">Function</NuxtLink>
+          <NuxtLink to="/scss/if_while">조건문_반복문</NuxtLink>
+          <NuxtLink to="/scss/Built-in_function">내장함수</NuxtLink>
         </div>
       </div>
       <div class="title-warp">
