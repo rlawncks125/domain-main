@@ -72,7 +72,7 @@
         <input type="checkbox" id="check102" />
         <label for="check102">애니메이션</label>
         <div class="menu-warp">
-          <NuxtLink to="/">정리전</NuxtLink>
+          <NuxtLink to="/animation/before">정리전</NuxtLink>
           <NuxtLink to="/">input</NuxtLink>
         </div>
       </div>
