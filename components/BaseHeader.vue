@@ -30,9 +30,9 @@
         <input type="checkbox" id="check4" />
         <label for="check4">CSS</label>
         <div class="menu-warp">
-          <NuxtLink to="/">root의사클래스</NuxtLink>
-          <NuxtLink to="/">CSS함수</NuxtLink>
-          <NuxtLink to="/">CSS선택자</NuxtLink>
+          <NuxtLink to="/css/root">root의사클래스</NuxtLink>
+          <NuxtLink to="/css/function">CSS함수</NuxtLink>
+          <NuxtLink to="/css/selector">CSS선택자</NuxtLink>
         </div>
       </div>
       <div class="title-warp">

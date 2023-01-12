@@ -3,7 +3,7 @@
   <div>
     <template v-for="(item, index) in items" :key="index">
       <h1>{{ item.title }}</h1>
-      <div class="bg-graident-animation">HTML EL</div>
+      <div v-if="item.html" v-html="item.html"></div>
       <div class="my-[.5rem]" v-for="(code, kindex) in item.code" :key="kindex">
         <LazyCodeEditor :value="code.code" :lang="code.lang" />
       </div>
