@@ -55,17 +55,17 @@
         <input type="checkbox" id="check100" />
         <label for="check100">CSS 디자인</label>
         <div class="menu-warp">
-          <NuxtLink to="/">text</NuxtLink>
-          <NuxtLink to="/">image</NuxtLink>
-          <NuxtLink to="/">details-summary</NuxtLink>
+          <NuxtLink to="/cssDesign/test">text</NuxtLink>
+          <NuxtLink to="/cssDesign/image">image</NuxtLink>
+          <NuxtLink to="/cssDesign/details-summary">details-summary</NuxtLink>
         </div>
       </div>
       <div class="title-warp">
         <input type="checkbox" id="check101" />
         <label for="check101">정규식 표현</label>
         <div class="menu-warp">
-          <NuxtLink to="/">정규식</NuxtLink>
-          <NuxtLink to="/">예제_테스트</NuxtLink>
+          <NuxtLink to="/regexp/test">정규식</NuxtLink>
+          <NuxtLink to="/regexp/exmple">예제_테스트</NuxtLink>
         </div>
       </div>
       <div class="title-warp">
@@ -73,7 +73,6 @@
         <label for="check102">애니메이션</label>
         <div class="menu-warp">
           <NuxtLink to="/animation/before">정리전</NuxtLink>
-          <NuxtLink to="/">input</NuxtLink>
         </div>
       </div>
       <div class="title-warp">
