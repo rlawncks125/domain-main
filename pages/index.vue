@@ -15,11 +15,23 @@
       <Adsense :width="12" :height="30" :ad-slot="5147197541" />
       <Adsense :width="12" :height="30" :ad-slot="5147197541" />
     </div>
+    <Base />
+    <Semantic />
+    <Text />
+    <List />
+    <Table />
+    <Form />
   </div>
 </template>
 
 <script setup lang="ts">
 import { CodeLanguages } from "@/plugins/simple-code-editor";
+import Base from "./HTML/Base.vue";
+import Semantic from "./HTML/Semantic.vue";
+import Text from "./HTML/Text.vue";
+import List from "./HTML/List.vue";
+import Table from "./HTML/Table.vue";
+import Form from "./HTML/Form.vue";
 
 const languages = Object.keys(CodeLanguages).map((v) => [v, v]);
 </script>
