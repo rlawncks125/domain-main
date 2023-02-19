@@ -83,6 +83,7 @@ export default defineNuxtConfig({
       ],
     },
     workbox: {
+      // 캐시저장할 파일
       globPatterns: ["**/*.{js,css,html,vue,ico,png,svg}"],
       navigateFallback: "/",
     },
