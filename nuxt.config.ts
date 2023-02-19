@@ -2,6 +2,7 @@ import { defineNuxtConfig } from "nuxt/config";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  modules: ["@vite-pwa/nuxt"],
   css: ["~/assets/scss/header.scss", "~/assets/tailwind.scss"],
   postcss: {
     plugins: {
@@ -53,6 +54,46 @@ export default defineNuxtConfig({
     },
     // private
     praviteString: "",
+  },
+
+  pwa: {
+    registerType: "autoUpdate",
+    injectRegister: null,
+    manifest: {
+      name: "Nuxt Vite PWA",
+      short_name: "NuxtVitePWA",
+      theme_color: "#4DBA87",
+      icons: [
+        {
+          src: "img/icons/logo_x192.png",
+          sizes: "192x192",
+          type: "image/png",
+        },
+        {
+          src: "img/icons/logo_x512.png",
+          sizes: "512x512",
+          type: "image/png",
+        },
+        {
+          src: "img/icons/logo_x512.png",
+          sizes: "512x512",
+          type: "image/png",
+          purpose: "any maskable",
+        },
+      ],
+    },
+    workbox: {
+      globPatterns: ["**/*.{js,css,html,vue,ico,png,svg}"],
+      navigateFallback: "/",
+    },
+    client: {
+      installPrompt: true,
+      periodicSyncForUpdates: 20,
+    },
+    devOptions: {
+      enabled: false,
+      /* other options */
+    },
   },
 });
 

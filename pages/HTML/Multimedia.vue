@@ -1,5 +1,11 @@
 <template>
   <div>
+    <div class="flex gap-2">
+      <button @click="moveToTime(2)">2초</button>
+      <button @click="moveToTime(4)">4초</button>
+      <button @click="moveToTime(videoRef?.duration || 0)">마지막</button>
+    </div>
+
     <template v-for="item in items" :key="item.id">
       <h1>{{ item.title }}</h1>
       <div v-html="item.html"></div>
@@ -22,6 +28,12 @@ import movBB from "@/assets/video/mov_bbb.mp4";
 
 export default defineComponent({
   setup() {
+    const videoRef = ref<HTMLVideoElement>();
+
+    const moveToTime = (sec: number) => {
+      videoRef.value!.currentTime = sec;
+    };
+
     onMounted(() => {
       const canvas = document.getElementById("#canvas") as HTMLCanvasElement;
       const ctx = canvas.getContext("2d");
@@ -30,11 +42,17 @@ export default defineComponent({
         ctx.fillStyle = "green";
         ctx.fillRect(10, 10, 150, 100);
       }
+
+      videoRef.value = document.querySelector("video") as HTMLVideoElement;
+
+      console.log(videoRef.value?.duration);
+      console.log(videoRef.value?.currentTime);
+      videoRef.value!.autoplay = true;
     });
 
     const items = [video(), audio(), canvas(), object_embed(), Iframe()];
 
-    return { items };
+    return { items, moveToTime, videoRef };
   },
 });
 
@@ -116,4 +134,8 @@ const Iframe = (): CodeReutrnType => ({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+button {
+  @apply border p-2 hover:bg-blue-400;
+}
+</style>
