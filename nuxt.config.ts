@@ -22,6 +22,13 @@ export default defineNuxtConfig({
           content: "utf-8",
         },
       ],
+      link: [
+        // 매니패스트
+        {
+          rel: "manifest",
+          href: "/manifest.json",
+        },
+      ],
       script: [
         // 구글 에드 센스
         {
@@ -54,47 +61,6 @@ export default defineNuxtConfig({
     },
     // private
     praviteString: "",
-  },
-
-  pwa: {
-    registerType: "autoUpdate",
-    injectRegister: null,
-    manifest: {
-      name: "Nuxt Vite PWA",
-      short_name: "NuxtVitePWA",
-      theme_color: "#4DBA87",
-      icons: [
-        {
-          src: "img/icons/logo_x192.png",
-          sizes: "192x192",
-          type: "image/png",
-        },
-        {
-          src: "img/icons/logo_x512.png",
-          sizes: "512x512",
-          type: "image/png",
-        },
-        {
-          src: "img/icons/logo_x512.png",
-          sizes: "512x512",
-          type: "image/png",
-          purpose: "any maskable",
-        },
-      ],
-    },
-    workbox: {
-      // 캐시저장할 파일
-      globPatterns: ["**/*.{js,css,html,vue,ico,png,svg}"],
-      navigateFallback: "/",
-    },
-    client: {
-      installPrompt: true,
-      periodicSyncForUpdates: 20,
-    },
-    devOptions: {
-      enabled: false,
-      /* other options */
-    },
   },
 });
 
